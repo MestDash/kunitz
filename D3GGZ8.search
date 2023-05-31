@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  bpti-kunitz.hmm
+# target sequence database:        D3GGZ8.fasta
+# output directed to file:         D3GGZ8.search
+# Max sensitivity mode:            on [all heuristic filters off]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aln_3d_cleanX  [M=57]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+    3.8e-06   13.4   0.3    3.8e-06   13.4   0.3    2.3  3  sp|D3GGZ8|BLI5_HAECO  Kunitz-type protein bli-5 OS=Haemonchus
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|D3GGZ8|BLI5_HAECO  Kunitz-type protein bli-5 OS=Haemonchus contortus OX=6289 GN=bli-5 PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.7   0.1      0.83      0.83      26      32 ..      20      26 ..      16      27 .. 0.63
+   2 ?   -2.5   0.5      0.35      0.35      39      53 ..     107     121 ..     107     122 .. 0.75
+   3 !   13.4   0.3   3.8e-06   3.8e-06      22      56 ..     157     190 ..     140     191 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -3.7 bits;  conditional E-value: 0.83
+         aln_3d_cleanX 26 akakkCe 32
+                           +akkC+
+  sp|D3GGZ8|BLI5_HAECO 20 HQAKKCT 26
+                          5677775 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.35
+         aln_3d_cleanX  39 cggnrNnFkteeeCr 53 
+                           c  + N  +t +eC 
+  sp|D3GGZ8|BLI5_HAECO 107 CSSKTNDCETGYECI 121
+                           667888888888885 PP
+
+  == domain 3  score: 13.4 bits;  conditional E-value: 3.8e-06
+         aln_3d_cleanX  22 yyYnakakkCeeFvYGGcgg.nrNnFkteeeCrrtC 56 
+                           + ++    +C++F +   +   +NnFkt+ +C+++C
+  sp|D3GGZ8|BLI5_HAECO 157 WGFDG--SECVKFKWDPEKPsSANNFKTKLQCESYC 190
+                           55554..4699999997776799************* PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (57 nodes)
+Target sequences:                          1  (195 residues searched)
+Passed MSV filter:                         1  (1); expected 1.0 (1)
+Passed bias filter:                        1  (1); expected 1.0 (1)
+Passed Vit filter:                         1  (1); expected 1.0 (1)
+Passed Fwd filter:                         1  (1); expected 1.0 (1)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5.36
+//
+[ok]
